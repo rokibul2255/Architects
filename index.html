@@ -8,14 +8,35 @@
 <script src="https://cdn.tailwindcss.com"></script>
 <link rel="shortcut icon" href="Images/logoipsum-245.svg" type="image/x-icon">
 </head>
-<body>
+<body> 
+
+  <!-- navbar -->
     <section class="  bg-orange-100">
-        <div class="navbar">
-            <div class="flex-1">
-              <a class="btn btn-ghost text-xl text-neutral-950 font-work sans">G3 Architects</a>
+      <!-- New nav -->
+      <div class="drawer">
+        <input id="my-drawer-3" type="checkbox" class="drawer-toggle" />
+        <div class="drawer-content flex flex-col">
+          <!-- Navbar -->
+          <div class="navbar w-full">
+            <div class="flex-none lg:hidden">
+              <label for="my-drawer-3" aria-label="open sidebar" class="btn btn-square btn-ghost">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  class="inline-block h-6 w-6 stroke-current">
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+              </label>
             </div>
-            <div class="flex-none">
-              <ul class="menu menu-horizontal px-1 text-stone-500 font-work sans">
+            <div class="mx-2 flex-1 px-2 text-xl text-neutral-950 font-semibold"><a href="index.html">G3 Architects</a></div>
+            <div class="hidden flex-none lg:block">
+              <ul class="menu menu-horizontal  text-stone-500">
+                <!-- Navbar menu content here -->
                 <li><a>Home</a></li>
                 <li><a>About</a></li>
                 <li><a>Contact Us</a></li>
@@ -23,6 +44,22 @@
               </ul>
             </div>
           </div>
+        </div>
+        <div class="drawer-side z-10">
+          <label for="my-drawer-3" aria-label="close sidebar" class="drawer-overlay"></label>
+          <ul class="menu bg-orange-400 min-h-full w-80 p-4 text-white ">
+            <!-- Sidebar content here -->
+                <li><a>Home</a></li>
+                <li><a>About</a></li>
+                <li><a>Contact Us</a></li>
+                <li><a>Login</a></li>
+          </ul>
+        </div>
+      </div>
+
+
+<!-- Brand New Group -->
+
     <div class="hero  min-h-screen">
         <div class="hero-content text-center flex-col ">
           <div class="max-w-2xl">
@@ -38,7 +75,11 @@
         </div>
       </div>
     </section>
-    <section class="flex bg-white px-20 py-20">
+
+<!-- quick list -->
+
+
+    <section class="flex bg-white flex-col-reverse lg:flex-row px-20 py-20">
             <div class="grid grid-cols-2 gap-5 ">
                 <img src="Images/Rectangle 14.png" alt="">
                 <img src="Images/Rectangle 15.png" alt="">
@@ -58,5 +99,106 @@
                 </div>
               </div>
     </section>
+
+    <!-- Features -->
+
+    <section class="flex bg-white flex-col lg:flex-row justify-between max-w-screen-2xl px-10 py-5">
+      <div class="flex flex-col max-w-xl justify-between gap-10">
+      <div class="">
+          <h2 class="card-title font-bold text-4xl text-black max-w-80 border-l-4  border-orange-400 pl-5">Features you will love & enjoy</h2>
+          <p class="text-base">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even</p>
+  </div>
+  
+      <div class="card shadow-xl">
+        <div class="card-body">
+          <h2 class="card-title  text-black font-semibold text-xl">Dexktop & Mobile Version</h2>
+          <p class="text-base">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised...........</p>
+        </div>
+      </div>
+    
+   
+      <div class="card shadow-xl">
+        <div class="card-body">
+          <h2 class="card-title  text-black font-semibold text-xl">Drag & Drop Builder</h2>
+          <p class="text-base">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised...........</p>
+        </div>
+      </div>
+    
+  
+      <div class="card shadow-xl">
+        <div class="card-body">
+          <h2 class="card-title  text-black font-semibold text-xl">Awesome Modern Design</h2>
+          <p class="text-base">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised...........</p>
+        </div>
+      </div>
+    
+    <div class="card shadow-xl">
+      <div class="card-body">
+        <h2 class="card-title  text-black font-semibold text-xl">Super Easy to Edit</h2>
+        <p class="text-base">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised...........</p>
+      </div>
+    </div>
+  </div>
+    
+      <div class="relative">
+        
+        <img class="w-full" src="Images/Rectangle 4.png" alt="...">
+        <div class="  bg-orange-400 absolute text-center p-3 rounded-md bottom-0 ">
+          <h2 class="text-white text-4xl font-bold">10+Year</h2>
+          <p class="text-white text-2xl">Experience</p>
+        </div>
+   </div>
+</section>
+
+<!-- Some Facts -->
+<section class=" bg-white">
+  <div class="max-w-lg text-center lg:text-left mx-auto lg:mx-0">
+    <h2 class="font-bold  text-black text-5xl py-7">Some Facts</h2>
+    <p class="text-base">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration.</p>
+  </div>
+  <div class=" mt-24 grid gap-y-10 justify-items-center grid-cols-1 md:grid-cols-2 lg:grid-cols-4  ">
+  <div class="size-60 flex flex-col items-center border  border-orange-400 justify-center rounded-md">
+    <img class="mb-2" src="Images/Group 22.png" alt="">
+    <h2 class="font-semibold text-5xl text-black">54</h2>
+    <p class="font-semibold text-xl">Awards Winnings</p>
+  </div>
+  <div class="size-60 flex flex-col items-center border  border-orange-400 justify-center rounded-md">
+    <img class="mb-2" src="Images/Group 28.png" alt="">
+    <h2 class="font-semibold text-5xl text-black">1458</h2>
+    <p class="font-semibold text-xl">Project Finished</p>
+  </div>
+  <div class="size-60 flex flex-col items-center border  border-orange-400 justify-center rounded-md">
+    <img class="mb-2" src="Images/Group 29.png" alt="">
+    <h2 class="font-semibold text-5xl text-black">590</h2>
+    <p class="font-semibold text-xl">Clients Worked</p>
+  </div>
+  <div class="size-60 flex flex-col items-center border  border-orange-400 justify-center rounded-md">
+    <img class="mb-2" src="Images/Group 30.png" alt="">
+    <h2 class="font-semibold text-5xl text-black">22578</h2>
+    <p class="font-semibold text-xl">Email Send</p>
+  </div>
+  </div>
+</section>
+
+<!-- Our Sponspors -->
+<section class="bg-white">
+  <div class="text-center py-5">
+    <h2 class="font-bold text-5xl  text-black my-5">Our Sponspors</h2>
+    <p class="text-base max-w-lg mx-auto">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration.</p>
+  </div>
+  <div class="flex flex-col gap-y-10 lg:flex-row items-center lg:justify-between  py-20">
+    <img src="Images/spotify Logo.png" alt="">
+    <img src="Images/Amazon Logo.png" alt="">
+    <img src="Images/google Logo.png" alt="">
+    <img src="Images/Telerama Logo.png" alt="">
+    <img src="Images/figma Logo.png" alt="">
+  </div>
+</section>
+<!-- footer section -->
+<footer class="footer footer-center   ">
+  <aside class="  w-full p-10 bg-orange-200">
+    <p>All rights reserved copyright@2023 startup landing page design</p>
+  </aside>
+</footer>
 </body>
 </html>
